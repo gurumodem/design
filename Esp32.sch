@@ -1,0 +1,433 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:EifLibrary
+LIBS:GuruModem-cache
+EELAYER 25 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 4 5
+Title "Guru Modem"
+Date "2018-11-13"
+Rev "0.2"
+Comp "Electronics Is Fun"
+Comment1 "Engineer: Carlos Santiago"
+Comment2 "ESP32 WiFi/Bluetooth Module"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-WROOM-32 U3
+U 1 1 5A637BAA
+P 4950 2800
+F 0 "U3" H 5650 3100 60  0000 C CNN
+F 1 "ESP-WROOM-32" H 5950 3000 60  0000 C CNN
+F 2 "EIFLibrary:ESP-WROOM-32" H 4950 2800 60  0001 C CNN
+F 3 "" H 4950 2800 60  0000 C CNN
+	1    4950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5A63AE4B
+P 2400 1850
+F 0 "R2" H 2550 1900 50  0000 C CNN
+F 1 "10K" H 2550 1800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 2330 1850 50  0001 C CNN
+F 3 "" H 2400 1850 50  0000 C CNN
+	1    2400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C10
+U 1 1 5A63AED2
+P 2400 2350
+F 0 "C10" H 2425 2450 50  0000 L CNN
+F 1 "1nF" H 2425 2250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2438 2200 50  0001 C CNN
+F 3 "" H 2400 2350 50  0000 C CNN
+	1    2400 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2000 2400 2200
+Wire Wire Line
+	2400 2100 3050 2100
+Wire Wire Line
+	3050 2100 3050 3000
+Wire Wire Line
+	2950 3000 4950 3000
+Connection ~ 2400 2100
+$Comp
+L GND #PWR013
+U 1 1 5A63AF5A
+P 2400 2500
+F 0 "#PWR013" H 2400 2250 50  0001 C CNN
+F 1 "GND" H 2400 2350 50  0000 C CNN
+F 2 "" H 2400 2500 50  0000 C CNN
+F 3 "" H 2400 2500 50  0000 C CNN
+	1    2400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR014
+U 1 1 5A63AF74
+P 2400 1350
+F 0 "#PWR014" H 2400 1200 50  0001 C CNN
+F 1 "+3.3V" H 2400 1490 50  0000 C CNN
+F 2 "" H 2400 1350 50  0000 C CNN
+F 3 "" H 2400 1350 50  0000 C CNN
+	1    2400 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1350 2400 1700
+Wire Wire Line
+	6900 3900 8100 3900
+Wire Wire Line
+	6900 3800 8100 3800
+Wire Wire Line
+	5600 4600 5600 5450
+Wire Wire Line
+	5600 5450 4450 5450
+Wire Wire Line
+	4950 4000 4000 4000
+Wire Wire Line
+	4950 3900 4200 3900
+Wire Wire Line
+	4200 3900 4200 3800
+Wire Wire Line
+	4200 3800 4000 3800
+Wire Wire Line
+	4950 3500 4000 3500
+Wire Wire Line
+	6900 3600 8100 3600
+Wire Wire Line
+	6900 2900 8050 2900
+Wire Wire Line
+	6900 3500 8100 3500
+Wire Wire Line
+	6900 3700 8100 3700
+Text HLabel 4000 3500 0    60   Output ~ 0
+ESP32-RI
+Text HLabel 4000 3800 0    60   Input ~ 0
+ESP32-DTR
+Text HLabel 4000 4000 0    60   Output ~ 0
+ESP32-DCD
+Text HLabel 4450 5450 0    60   Input ~ 0
+ESP32-RTS
+Text HLabel 8050 2900 2    60   Output ~ 0
+MOSI
+Text HLabel 8100 3500 2    60   Input ~ 0
+MISO
+Text HLabel 8100 3600 2    60   Output ~ 0
+SCK
+Text HLabel 8100 3700 2    60   Input ~ 0
+SS
+Text HLabel 8100 3800 2    60   Output ~ 0
+ESP32-TXD
+Text HLabel 8100 3900 2    60   Input ~ 0
+ESP32-RXD
+Wire Wire Line
+	4950 4100 4200 4100
+Wire Wire Line
+	4200 4100 4200 4200
+Wire Wire Line
+	4200 4200 4000 4200
+Text HLabel 4000 4200 0    60   Output ~ 0
+ESP32-DSR
+Text HLabel 1450 1500 0    60   Input ~ 0
++3.3V
+Wire Wire Line
+	1450 1500 2400 1500
+Connection ~ 2400 1500
+Wire Wire Line
+	2400 1600 4150 1600
+Wire Wire Line
+	4150 1600 4150 2900
+Wire Wire Line
+	4150 2900 4950 2900
+Connection ~ 2400 1600
+$Comp
+L GND #PWR015
+U 1 1 5A97E796
+P 4800 4400
+F 0 "#PWR015" H 4800 4150 50  0001 C CNN
+F 1 "GND" H 4800 4250 50  0000 C CNN
+F 2 "" H 4800 4400 50  0000 C CNN
+F 3 "" H 4800 4400 50  0000 C CNN
+	1    4800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 5A97E7B0
+P 7150 4900
+F 0 "#PWR016" H 7150 4650 50  0001 C CNN
+F 1 "GND" H 7150 4750 50  0000 C CNN
+F 2 "" H 7150 4900 50  0000 C CNN
+F 3 "" H 7150 4900 50  0000 C CNN
+	1    7150 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2800 4800 2800
+Wire Wire Line
+	4800 2800 4800 4400
+Wire Wire Line
+	6900 2800 7150 2800
+Wire Wire Line
+	7150 2800 7150 4900
+Wire Wire Line
+	5500 4600 5500 4650
+Wire Wire Line
+	5500 4650 7150 4650
+Connection ~ 7150 4650
+$Comp
+L C_Small C11
+U 1 1 5A97F4DB
+P 4550 2600
+F 0 "C11" H 4560 2670 50  0000 L CNN
+F 1 "0.1uF" H 4560 2520 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4550 2600 50  0001 C CNN
+F 3 "" H 4550 2600 50  0000 C CNN
+	1    4550 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2500 4550 2500
+Connection ~ 4150 2500
+$Comp
+L GND #PWR017
+U 1 1 5A97F669
+P 4550 2750
+F 0 "#PWR017" H 4550 2500 50  0001 C CNN
+F 1 "GND" H 4400 2700 50  0000 C CNN
+F 2 "" H 4550 2750 50  0000 C CNN
+F 3 "" H 4550 2750 50  0000 C CNN
+	1    4550 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2750 4550 2700
+Text Notes 4300 2400 0    60   ~ 0
+Place close to ESP pin 2.
+$Comp
+L CONN_01X06 P1
+U 1 1 5A98066A
+P 1450 6800
+F 0 "P1" H 1450 7150 50  0000 C CNN
+F 1 "CONN_01X06" V 1550 6800 50  0000 C CNN
+F 2 "EIFLibrary:HDR_6-PIN_STAGGERD" H 1450 6800 50  0001 C CNN
+F 3 "" H 1450 6800 50  0000 C CNN
+	1    1450 6800
+	-1   0    0    -1  
+$EndComp
+Text Notes 900  6300 0    60   ~ 0
+FTDI Programming connector.
+Wire Wire Line
+	4950 3600 4000 3600
+Text HLabel 4000 3600 0    60   Input ~ 0
+CARD_DETECT
+Wire Wire Line
+	5500 7050 5900 7050
+Wire Wire Line
+	6900 4100 8100 4100
+Text Label 8100 4100 0    60   ~ 0
+GPIO0
+Text Label 5900 7050 0    60   ~ 0
+GPIO0
+Text Label 4050 7200 0    60   ~ 0
+EN
+Connection ~ 3050 3000
+Text Label 2950 3000 2    60   ~ 0
+EN
+Text Notes 3200 7750 0    60   ~ 0
+(RESET)
+Wire Wire Line
+	6300 4600 6300 5450
+Wire Wire Line
+	6300 5450 8100 5450
+Text HLabel 8100 5450 2    60   Output ~ 0
+ESP32-CTS
+$Comp
+L R R4
+U 1 1 5BA7D3A3
+P 5500 6600
+F 0 "R4" H 5650 6650 50  0000 C CNN
+F 1 "10K" H 5650 6550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5430 6600 50  0001 C CNN
+F 3 "" H 5500 6600 50  0001 C CNN
+	1    5500 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_6x6mm SW1
+U 1 1 5BA7D834
+P 3300 7200
+F 0 "SW1" H 3450 7310 50  0000 C CNN
+F 1 "SW_6x6mm" H 3300 6950 50  0000 C CNN
+F 2 "EIFLibrary:Micro-PUSHBUTTON" H 3300 7200 50  0001 C CNN
+F 3 "" H 3300 7200 50  0000 C CNN
+	1    3300 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_6x6mm SW2
+U 1 1 5BA7D875
+P 5150 7200
+F 0 "SW2" H 5300 7310 50  0000 C CNN
+F 1 "SW_6x6mm" H 5150 6950 50  0000 C CNN
+F 2 "EIFLibrary:Micro-PUSHBUTTON" H 5150 7200 50  0001 C CNN
+F 3 "" H 5150 7200 50  0000 C CNN
+	1    5150 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 7200 4050 7200
+Wire Wire Line
+	3650 7400 3600 7400
+Connection ~ 3650 7200
+Wire Wire Line
+	3000 7200 2950 7200
+Wire Wire Line
+	2950 7200 2950 7600
+Wire Wire Line
+	2950 7400 3000 7400
+Connection ~ 2950 7400
+$Comp
+L GND #PWR018
+U 1 1 5BA7D9D7
+P 2950 7600
+F 0 "#PWR018" H 2950 7350 50  0001 C CNN
+F 1 "GND" H 2950 7450 50  0000 C CNN
+F 2 "" H 2950 7600 50  0001 C CNN
+F 3 "" H 2950 7600 50  0001 C CNN
+	1    2950 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 7200 4800 7200
+Wire Wire Line
+	4800 7200 4800 7600
+Wire Wire Line
+	4800 7400 4850 7400
+Connection ~ 4800 7400
+$Comp
+L GND #PWR019
+U 1 1 5BA7DB12
+P 4800 7600
+F 0 "#PWR019" H 4800 7350 50  0001 C CNN
+F 1 "GND" H 4800 7450 50  0000 C CNN
+F 2 "" H 4800 7600 50  0001 C CNN
+F 3 "" H 4800 7600 50  0001 C CNN
+	1    4800 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 7400 5450 7400
+Wire Wire Line
+	5500 6750 5500 7400
+Wire Wire Line
+	5500 7200 5450 7200
+Connection ~ 5500 7200
+Connection ~ 5500 7050
+Wire Wire Line
+	5500 6450 5500 6350
+$Comp
+L +3.3V #PWR020
+U 1 1 5BA7DD32
+P 5500 6350
+F 0 "#PWR020" H 5500 6200 50  0001 C CNN
+F 1 "+3.3V" H 5500 6490 50  0000 C CNN
+F 2 "" H 5500 6350 50  0000 C CNN
+F 3 "" H 5500 6350 50  0000 C CNN
+	1    5500 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 6550 1800 6550
+Wire Wire Line
+	1800 6550 1800 7200
+$Comp
+L GND #PWR021
+U 1 1 5BA7CF56
+P 1800 7200
+F 0 "#PWR021" H 1800 6950 50  0001 C CNN
+F 1 "GND" H 1800 7050 50  0000 C CNN
+F 2 "" H 1800 7200 50  0001 C CNN
+F 3 "" H 1800 7200 50  0001 C CNN
+	1    1800 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3100 8050 3100
+Wire Wire Line
+	6900 3200 8050 3200
+Text Label 8050 3100 0    60   ~ 0
+FTDI-RXD
+Text Label 8050 3200 0    60   ~ 0
+FTDI-TXD
+Wire Wire Line
+	1650 6850 2200 6850
+Wire Wire Line
+	1650 6950 2200 6950
+Text Label 2200 6850 0    60   ~ 0
+FTDI-TXD
+Text Label 2200 6950 0    60   ~ 0
+FTDI-RXD
+Text Notes 950  7700 0    60   ~ 0
+(USE ONLY 3.3V FTDI CABLE)\nPart Number TTL-234X-3V3
+NoConn ~ 4950 3100
+NoConn ~ 4950 3200
+NoConn ~ 4950 3300
+NoConn ~ 4950 3400
+NoConn ~ 4950 3700
+NoConn ~ 4950 3800
+NoConn ~ 5700 4600
+NoConn ~ 5800 4600
+NoConn ~ 5900 4600
+NoConn ~ 6000 4600
+NoConn ~ 6100 4600
+NoConn ~ 6200 4600
+NoConn ~ 6900 4000
+NoConn ~ 6900 3400
+NoConn ~ 6900 3300
+NoConn ~ 6900 3000
+NoConn ~ 1650 7050
+NoConn ~ 1650 6750
+NoConn ~ 1650 6650
+Wire Wire Line
+	3650 7400 3650 7200
+Text Notes 5050 7750 0    60   ~ 0
+(PROG)
+NoConn ~ 6400 4600
+$EndSCHEMATC

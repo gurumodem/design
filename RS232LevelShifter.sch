@@ -1,0 +1,410 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:EifLibrary
+LIBS:GuruModem-cache
+EELAYER 25 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 2 5
+Title "Guru Modem"
+Date "2018-11-13"
+Rev "0.2"
+Comp "Electronics Is Fun"
+Comment1 "Engineer: Carlos Santiago"
+Comment2 "RS-232 Interface"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 3300 3550 0    60   ~ 0
+TXD
+Text Label 3300 3750 0    60   ~ 0
+RXD
+Text Label 3300 3950 0    60   ~ 0
+RTS
+Text Label 3300 4150 0    60   ~ 0
+CTS
+Text Label 3300 4350 0    60   ~ 0
+DSR
+Text Label 3300 4750 0    60   ~ 0
+DCD
+Text Label 3300 4650 0    60   ~ 0
+DTR
+Text Label 3300 5050 0    60   ~ 0
+RI
+$Comp
+L GND #PWR01
+U 1 1 5A637300
+P 2850 6300
+F 0 "#PWR01" H 2850 6050 50  0001 C CNN
+F 1 "GND" H 2850 6150 50  0000 C CNN
+F 2 "" H 2850 6300 50  0000 C CNN
+F 3 "" H 2850 6300 50  0000 C CNN
+	1    2850 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MAX3237ECDWR U1
+U 1 1 5A638A9A
+P 4750 2850
+F 0 "U1" H 5500 3350 60  0000 C CNN
+F 1 "MAX3237ECDWR" H 5800 3200 60  0000 C CNN
+F 2 "EIFLibrary:SOIC-28DW" H 4950 3100 60  0001 C CNN
+F 3 "" H 4950 3100 60  0000 C CNN
+	1    4750 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5A638D01
+P 5350 5400
+F 0 "#PWR02" H 5350 5150 50  0001 C CNN
+F 1 "GND" H 5350 5250 50  0000 C CNN
+F 2 "" H 5350 5400 50  0000 C CNN
+F 3 "" H 5350 5400 50  0000 C CNN
+	1    5350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5A638D6C
+P 6350 3000
+F 0 "C4" H 6375 3100 50  0000 L CNN
+F 1 "0.1uF" H 6375 2900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6388 2850 50  0001 C CNN
+F 3 "" H 6350 3000 50  0000 C CNN
+	1    6350 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5A638DDB
+P 4350 3000
+F 0 "C3" H 4000 3100 50  0000 L CNN
+F 1 "0.1uF" H 4000 3000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4388 2850 50  0001 C CNN
+F 3 "" H 4350 3000 50  0000 C CNN
+	1    4350 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 5A638F69
+P 6650 3250
+F 0 "C5" V 6450 3200 50  0000 L CNN
+F 1 "0.1uF" V 6800 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6688 3100 50  0001 C CNN
+F 3 "" H 6650 3250 50  0000 C CNN
+	1    6650 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 5A638FAD
+P 4050 3250
+F 0 "C2" V 3950 3100 50  0000 L CNN
+F 1 "0.1uF" V 3850 3000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4088 3100 50  0001 C CNN
+F 3 "" H 4050 3250 50  0000 C CNN
+	1    4050 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5A639059
+P 3850 3300
+F 0 "#PWR03" H 3850 3050 50  0001 C CNN
+F 1 "GND" H 3850 3150 50  0000 C CNN
+F 2 "" H 3850 3300 50  0000 C CNN
+F 3 "" H 3850 3300 50  0000 C CNN
+	1    3850 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5A639079
+P 6950 3300
+F 0 "#PWR04" H 6950 3050 50  0001 C CNN
+F 1 "GND" H 6950 3150 50  0000 C CNN
+F 2 "" H 6950 3300 50  0000 C CNN
+F 3 "" H 6950 3300 50  0000 C CNN
+	1    6950 3300
+	1    0    0    -1  
+$EndComp
+Text HLabel 9000 4450 2    60   Output ~ 0
+ESP32-RXD
+Text HLabel 9000 4600 2    60   Input ~ 0
+ESP32-TXD
+Text HLabel 9000 3550 2    60   Output ~ 0
+ESP32-RTS
+Text HLabel 9000 4300 2    60   Input ~ 0
+ESP32-CTS
+Text HLabel 9000 4150 2    60   Input ~ 0
+ESP32-DSR
+Text HLabel 9000 4000 2    60   Input ~ 0
+ESP32-DCD
+Text HLabel 9000 3850 2    60   Output ~ 0
+ESP32-DTR
+Text HLabel 9000 3700 2    60   Input ~ 0
+ESP32-RI
+Text HLabel 3600 1950 0    60   Input ~ 0
++3.3V
+$Comp
+L C_Small C1
+U 1 1 5BA7C900
+P 4100 2150
+F 0 "C1" H 4110 2220 50  0000 L CNN
+F 1 "0.1uF" H 4110 2070 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4100 2150 50  0001 C CNN
+F 3 "" H 4100 2150 50  0001 C CNN
+	1    4100 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5BA7C987
+P 4100 2300
+F 0 "#PWR05" H 4100 2050 50  0001 C CNN
+F 1 "GND" H 4100 2150 50  0000 C CNN
+F 2 "" H 4100 2300 50  0001 C CNN
+F 3 "" H 4100 2300 50  0001 C CNN
+	1    4100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5BA7CBED
+P 4150 5300
+F 0 "R1" V 4050 5300 50  0000 C CNN
+F 1 "10K" V 4250 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4080 5300 50  0001 C CNN
+F 3 "" H 4150 5300 50  0001 C CNN
+	1    4150 5300
+	0    1    1    0   
+$EndComp
+Text HLabel 3850 5300 0    60   Input ~ 0
++3.3V
+Wire Wire Line
+	2650 4550 2850 4550
+Wire Wire Line
+	2850 4550 2850 6300
+Wire Wire Line
+	5350 5250 5350 5400
+Wire Wire Line
+	4350 2850 4750 2850
+Wire Wire Line
+	4350 3150 4750 3150
+Wire Wire Line
+	6350 3150 5950 3150
+Wire Wire Line
+	6350 2850 5950 2850
+Wire Wire Line
+	5950 3250 6500 3250
+Wire Wire Line
+	4750 3250 4200 3250
+Wire Wire Line
+	3900 3250 3850 3250
+Wire Wire Line
+	3850 3250 3850 3300
+Wire Wire Line
+	6950 3300 6950 3250
+Wire Wire Line
+	6950 3250 6800 3250
+Wire Wire Line
+	5950 3550 9000 3550
+Wire Wire Line
+	5950 3650 8900 3650
+Wire Wire Line
+	5950 3750 8850 3750
+Wire Wire Line
+	5950 3850 8800 3850
+Wire Wire Line
+	5950 3950 8750 3950
+Wire Wire Line
+	5950 4050 8700 4050
+Wire Wire Line
+	5950 4150 8650 4150
+Wire Wire Line
+	5950 4250 8600 4250
+Wire Wire Line
+	8900 3650 8900 3700
+Wire Wire Line
+	8900 3700 9000 3700
+Wire Wire Line
+	8850 3750 8850 3850
+Wire Wire Line
+	8850 3850 9000 3850
+Wire Wire Line
+	8800 3850 8800 4000
+Wire Wire Line
+	8800 4000 9000 4000
+Wire Wire Line
+	8750 3950 8750 4150
+Wire Wire Line
+	8750 4150 9000 4150
+Wire Wire Line
+	8700 4050 8700 4300
+Wire Wire Line
+	8700 4300 9000 4300
+Wire Wire Line
+	8650 4150 8650 4450
+Wire Wire Line
+	8650 4450 9000 4450
+Wire Wire Line
+	8600 4250 8600 4600
+Wire Wire Line
+	8600 4600 9000 4600
+Wire Wire Line
+	5350 1950 5350 2400
+Wire Wire Line
+	3600 1950 5350 1950
+Wire Wire Line
+	4100 2050 4100 1950
+Connection ~ 4100 1950
+Wire Wire Line
+	4100 2250 4100 2300
+Wire Wire Line
+	3850 5300 4000 5300
+Wire Wire Line
+	4550 4650 4550 5300
+Wire Wire Line
+	4550 4650 4750 4650
+Wire Wire Line
+	4750 4850 4550 4850
+Connection ~ 4550 4850
+Wire Wire Line
+	4550 5300 5350 5300
+Connection ~ 5350 5300
+Wire Wire Line
+	4750 4750 4450 4750
+Wire Wire Line
+	4450 4750 4450 5300
+Wire Wire Line
+	4450 5300 4300 5300
+NoConn ~ 5950 4450
+NoConn ~ 2650 5750
+NoConn ~ 2650 5650
+NoConn ~ 2650 5550
+NoConn ~ 2650 5450
+NoConn ~ 2650 5350
+NoConn ~ 2650 5250
+NoConn ~ 2650 5150
+NoConn ~ 2650 4950
+NoConn ~ 2650 4850
+NoConn ~ 2650 4450
+NoConn ~ 2650 4250
+NoConn ~ 2650 4050
+NoConn ~ 2650 3850
+NoConn ~ 2650 3650
+NoConn ~ 2650 3450
+NoConn ~ 2650 3350
+Wire Wire Line
+	2350 6000 2350 6100
+Wire Wire Line
+	2350 6100 2850 6100
+Wire Wire Line
+	2450 6100 2450 6000
+Connection ~ 2850 6100
+Connection ~ 2450 6100
+$Comp
+L DB25_Female_RightAngle_MountingHoles J1
+U 1 1 5BA7F359
+P 2650 3350
+F 0 "J1" H 2400 3700 50  0000 C CNN
+F 1 "DB25_Female_RightAngle_MountingHoles" H 2450 3600 50  0000 C CNN
+F 2 "EIFLibrary:DSUB-25_Female_RightAngle_MountingHoles" H 2350 2150 50  0001 C CNN
+F 3 "" H 2350 2150 50  0001 C CNN
+	1    2650 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3550 3300 3550
+Wire Wire Line
+	4750 3550 4550 3550
+Text Label 4550 3550 0    60   ~ 0
+RTS
+Wire Wire Line
+	4750 3750 4550 3750
+Text Label 4550 4150 0    60   ~ 0
+TXD
+Wire Wire Line
+	2650 3950 3300 3950
+Wire Wire Line
+	3300 5050 2650 5050
+Text Label 4550 4250 0    60   ~ 0
+RXD
+Wire Wire Line
+	4750 4250 4550 4250
+Wire Wire Line
+	3300 3750 2650 3750
+Text Label 4550 3650 0    60   ~ 0
+RI
+Wire Wire Line
+	4750 3650 4550 3650
+Wire Wire Line
+	3300 4650 2650 4650
+Wire Wire Line
+	3300 4150 2650 4150
+Text Label 4550 4050 0    60   ~ 0
+CTS
+Wire Wire Line
+	4750 4050 4550 4050
+Text Label 4550 3750 0    60   ~ 0
+DTR
+Wire Wire Line
+	4750 3850 4550 3850
+Wire Wire Line
+	3300 4750 2650 4750
+Wire Wire Line
+	4750 4150 4550 4150
+Text Label 4550 3850 0    60   ~ 0
+DCD
+Wire Wire Line
+	3300 4350 2650 4350
+Text Label 4550 3950 0    60   ~ 0
+DSR
+Wire Wire Line
+	4750 3950 4550 3950
+Text Label 6150 3250 0    60   ~ 0
+V+
+Text Label 4200 3250 0    60   ~ 0
+V-
+Text Label 4550 2850 0    60   ~ 0
+C2+
+Text Label 4550 3150 0    60   ~ 0
+C2-
+Text Label 6050 2850 0    60   ~ 0
+C1+
+Text Label 6050 3150 0    60   ~ 0
+C1-
+Text Notes 4450 6000 0    60   ~ 0
+Signals RINX and DOUTX are RS-232 Levels.\nSignals ROUTX and DINX are TTL Levels.
+$EndSCHEMATC

@@ -1,0 +1,257 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:EifLibrary
+LIBS:GuruModem-cache
+EELAYER 25 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 3 5
+Title "Guru Modem"
+Date "2018-11-13"
+Rev "0.2"
+Comp "Electronics Is Fun"
+Comment1 "Engineer: Carlos Santiago"
+Comment2 "Power Supply"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C_Small C6
+U 1 1 5A978367
+P 3400 4300
+F 0 "C6" H 3500 4350 50  0000 L CNN
+F 1 "10uF" H 3500 4250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3400 4300 50  0001 C CNN
+F 3 "" H 3400 4300 50  0000 C CNN
+	1    3400 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C7
+U 1 1 5A97849A
+P 4200 4300
+F 0 "C7" H 4300 4350 50  0000 L CNN
+F 1 "0.1uF" H 4300 4250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4200 4300 50  0001 C CNN
+F 3 "" H 4200 4300 50  0000 C CNN
+	1    4200 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C8
+U 1 1 5A9786DE
+P 6150 4350
+F 0 "C8" H 6250 4400 50  0000 L CNN
+F 1 "0.1uF" H 6250 4300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6150 4350 50  0001 C CNN
+F 3 "" H 6150 4350 50  0000 C CNN
+	1    6150 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3950 6150 4250
+Connection ~ 6150 3950
+$Comp
+L GND #PWR06
+U 1 1 5A97945F
+P 6150 4650
+F 0 "#PWR06" H 6150 4400 50  0001 C CNN
+F 1 "GND" H 6150 4500 50  0000 C CNN
+F 2 "" H 6150 4650 50  0000 C CNN
+F 3 "" H 6150 4650 50  0000 C CNN
+	1    6150 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5A9794BB
+P 4200 4650
+F 0 "#PWR07" H 4200 4400 50  0001 C CNN
+F 1 "GND" H 4200 4500 50  0000 C CNN
+F 2 "" H 4200 4650 50  0000 C CNN
+F 3 "" H 4200 4650 50  0000 C CNN
+	1    4200 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5A9794E9
+P 3400 4650
+F 0 "#PWR08" H 3400 4400 50  0001 C CNN
+F 1 "GND" H 3400 4500 50  0000 C CNN
+F 2 "" H 3400 4650 50  0000 C CNN
+F 3 "" H 3400 4650 50  0000 C CNN
+	1    3400 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3950 3400 4200
+Wire Wire Line
+	4200 3950 4200 4200
+Connection ~ 3400 3950
+Connection ~ 4200 3950
+Wire Wire Line
+	3400 4400 3400 4650
+Wire Wire Line
+	4200 4650 4200 4400
+Wire Wire Line
+	6150 4450 6150 4650
+$Comp
+L C_Small C9
+U 1 1 5A97A606
+P 6900 4350
+F 0 "C9" H 7000 4400 50  0000 L CNN
+F 1 "10uF" H 7000 4300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6900 4350 50  0001 C CNN
+F 3 "" H 6900 4350 50  0000 C CNN
+	1    6900 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 5A97A60D
+P 6900 4650
+F 0 "#PWR09" H 6900 4400 50  0001 C CNN
+F 1 "GND" H 6900 4500 50  0000 C CNN
+F 2 "" H 6900 4650 50  0000 C CNN
+F 3 "" H 6900 4650 50  0000 C CNN
+	1    6900 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4450 6900 4650
+Text HLabel 8050 3950 2    60   Output ~ 0
++3.3V
+$Comp
+L GND #PWR010
+U 1 1 5A97CA9B
+P 2000 4700
+F 0 "#PWR010" H 2000 4450 50  0001 C CNN
+F 1 "GND" H 2000 4550 50  0000 C CNN
+F 2 "" H 2000 4700 50  0000 C CNN
+F 3 "" H 2000 4700 50  0000 C CNN
+	1    2000 4700
+	1    0    0    -1  
+$EndComp
+Text Notes 6300 6600 0    60   ~ 0
++3.3V @ 1.5A Regulator. Input voltage +5V.
+Wire Wire Line
+	2000 4550 2000 4700
+Wire Wire Line
+	2100 4550 2100 4650
+Wire Wire Line
+	2100 4650 2000 4650
+Connection ~ 2000 4650
+NoConn ~ 2400 4350
+NoConn ~ 2400 4250
+NoConn ~ 2400 4150
+$Comp
+L USB_OTG J2
+U 1 1 5BA81DA5
+P 2100 4150
+F 0 "J2" H 1900 4600 50  0000 L CNN
+F 1 "USB_OTG" H 1900 4500 50  0000 L CNN
+F 2 "EIFLibrary:CUI_Micro_USB_SMT_UJ2-MIBH2-4-SMT" H 2250 4100 50  0001 C CNN
+F 3 "" H 2250 4100 50  0001 C CNN
+	1    2100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3950 4750 3950
+$Comp
+L PWR_FLAG #FLG011
+U 1 1 5BA82C65
+P 2500 3750
+F 0 "#FLG011" H 2500 3825 50  0001 C CNN
+F 1 "PWR_FLAG" H 2500 3900 50  0000 C CNN
+F 2 "" H 2500 3750 50  0001 C CNN
+F 3 "" H 2500 3750 50  0001 C CNN
+	1    2500 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3750 2500 3950
+Connection ~ 2500 3950
+Wire Wire Line
+	6900 3950 6900 4250
+Connection ~ 6900 3950
+$Comp
+L AP7362-33 U2
+U 1 1 5BA85F7D
+P 5150 4350
+F 0 "U2" H 5150 4900 60  0000 C CNN
+F 1 "AP7362-33" H 5450 4150 60  0000 C CNN
+F 2 "EIFLibrary:SO-8EP" H 5150 4350 60  0001 C CNN
+F 3 "" H 5150 4350 60  0001 C CNN
+	1    5150 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4050 4650 4050
+Wire Wire Line
+	4650 3950 4650 4350
+Connection ~ 4650 3950
+Wire Wire Line
+	5150 4550 5150 4650
+$Comp
+L GND #PWR012
+U 1 1 5BA8629D
+P 5150 4650
+F 0 "#PWR012" H 5150 4400 50  0001 C CNN
+F 1 "GND" H 5150 4500 50  0000 C CNN
+F 2 "" H 5150 4650 50  0000 C CNN
+F 3 "" H 5150 4650 50  0000 C CNN
+	1    5150 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4350 4750 4350
+Connection ~ 4650 4050
+Wire Wire Line
+	5650 4150 5550 4150
+Wire Wire Line
+	5650 3950 5650 4150
+Connection ~ 5650 3950
+Wire Wire Line
+	5550 4050 5650 4050
+Connection ~ 5650 4050
+NoConn ~ 5550 4350
+Wire Wire Line
+	5550 3950 8050 3950
+Wire Wire Line
+	5050 4550 5050 4600
+Wire Wire Line
+	5050 4600 5150 4600
+Connection ~ 5150 4600
+Text Label 2900 3950 0    60   ~ 0
++5V
+$EndSCHEMATC
